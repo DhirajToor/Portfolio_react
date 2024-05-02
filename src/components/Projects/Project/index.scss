@@ -1,0 +1,107 @@
+
+ 
+ 
+     .btn-group{
+      display: flex;
+      gap: 0.9rem;
+      align-items: center;
+     }
+     .btn-project:hover{
+      border: none;
+     }
+     .icon{
+      cursor: pointer;
+      color: white;
+      font-size: 35px;
+      transition: all 0.4s;
+     } 
+     .project-icon{
+        width: 25px;
+        height: 25px;
+        
+        color:#878792;
+     }
+  
+    .project-icon:hover{
+        
+      color:  #fdd700;
+    }
+//     .skills-container{
+//       position: relative;
+//       display: flex;
+//       padding: 5rem;
+//       margin: 10rem auto;
+//       gap: 30px; 
+  
+  
+//     }
+//     .skill-container-left{
+//       width: 50%;
+//       display: flex; 
+//       flex-direction: column;
+  
+//     }
+//     .skill-container-right{
+//       display: flex;
+//       flex-wrap: wrap; 
+  
+//       justify-content: center;
+//       width: 50%;
+//       position: relative;
+//       gap: 2rem;
+//     }
+    
+//     .skill-faded-text{
+//       user-select: none;
+//       font-size: 15em;
+//       color:rgb(231, 231, 231);
+//        position: absolute;
+//       bottom: -34.5%;
+//       right: -25%;
+//       font-weight: bold; 
+//     }
+//    .blob-style{
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       z-index: -5;
+//       transform: translate(-50%, -50%);
+//       animation: blobAnimate 3s linear infinite;
+//    }
+//    @keyframes blobAnimate {
+//       50%{
+//           top: 54%;
+//           left: 46%;
+//       }
+      
+//    }
+//    .skill-heading{
+//       font-size: 50px;
+//       font-weight: bold;
+//       color: var(--bgOrange);
+//       line-height: 50px;
+//    }
+//    .caps{
+//       font-size: 90px;
+//    }
+//   .skill-subheading{
+//       margin-top:1rem ;
+//       width: 85%;
+//       text-align: justify;
+//   }
+  
+//   .skill-subheading p{
+//       margin:15px 0;
+//     }
+  
+//   .skills-logo{ 
+//       width: 90px;
+//       transition: all 0.5s;
+//     }
+//   .skills-logo:hover{
+//       transform: scale(1.2);
+//   }
+  
+  
+    
+   

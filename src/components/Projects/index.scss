@@ -1,0 +1,347 @@
+
+body{
+  overflow-x: hidden;
+}
+.projects-page{
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:1950px) and (min-width:1230px){
+ .P-zone{
+  margin-top: -220px;
+ }
+
+}
+@media (max-width:1220px) and  (min-width:900px){
+ .P-zone{
+  margin-top: -16%;
+ }
+
+}
+@media (max-width:900px)  and (min-width:700px){
+ .P-zone{
+  margin-top: -26%;
+ }
+
+} 
+@media (max-width:999px)  and (min-width:400px){
+  .P-zone{
+   margin-top: -300px;
+  }
+ 
+ } 
+  @media (max-width:400px)  and (min-width:212px){
+  .P-zone{  
+   margin-top: -350px;
+  }
+ 
+ }   
+.project-section{ 
+    // background-color: rgb(231, 231, 231);
+    margin-top: 20rem;  
+    //  width: 100%;
+   }
+  //  .page-header{
+  //   color: var(--bgOrange);
+  //   font-size: 90px;
+  //   text-align: center;
+  //   padding-top: 30px;
+  //  }
+   .project-container{
+    max-width: 90%;
+    // max-height: 59%;
+    margin:  auto ;
+    padding: 3rem 0;
+ 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10%;
+   }
+   .project-card{
+    width: 45%; 
+    height: 400px;
+     background-image: url(../../assets/projects/Netflix.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 0 40px #1f1f1f;
+    margin: 0 auto;
+
+   } 
+
+   .project-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    transform: scaleX(1);
+    z-index: 0;
+   }
+   .project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+   }
+   .project-card:hover::before{
+    transform: scaleX(1);
+
+   }
+.project-number{
+    position: absolute;
+    font-size: 150px;
+    font-weight: 600;
+    color: white;
+    z-index: 10; 
+    display: none;
+}
+.project-card:hover .project-number{
+    display: block;
+}
+.project-number-right{
+    right: -40px;
+    top: -45px;
+
+}
+.project-number-left{
+    left: -40px;
+    top: -45px;
+
+}
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.4s;
+
+} 
+.project-content-left{
+    left:10%;
+}
+
+.project-content-right{
+    right:12%;
+}
+.project-skills-container{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+} 
+.project-skill{
+    width:  30px;
+   }
+
+   .project-heading{
+    color: #ffd700;
+    font-size: 50px;
+    font-weight: bold;  
+    line-height: 3rem;
+
+   }
+   .project-sub-heading{
+    width: 70%; 
+    font-size: 16px;
+    font-style: italic;
+   }
+   .btn-group{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+   }
+   .btn-project:hover{
+    border: none;
+   }
+   .icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+   }
+   .icon:hover{
+    color: var(--bgOrange);
+   }
+ .project-card:hover .project-content{
+    transform: scale(1.1);
+ }
+ 
+//  #project1{
+//     background-image: url(./images/projects/weather.png);
+//   }
+
+  #project2{ 
+    background-image: url(../../assets/projects/weather.png);
+  }
+//   #project3{
+//     background-image: url(./images/projects/Project3.png);
+//   }
+//   #project4{
+//     margin-left:120px;
+//     background-image: url(./images/projects/Project4.png);
+//   }
+a{
+  
+}
+
+/* media query started here */
+
+
+@media (max-width:1000px) {
+    .page-header {
+      padding-top: 30px;
+      color: var(--bgOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .project-container { 
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+    .project-card {
+      background-size: cover;
+      background-position: center;
+    }
+    .project-content {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .project-content-left {
+      left: 0;
+    }
+    .project-heading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .project-sub-heading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .project-skill-container {
+      width: 100%;
+    }
+    .project-skill {
+      width: 35px;
+    }
+    .project-card:hover .project-number {
+      display: none;
+    }
+    .project-card:hover .project-content {
+      scale: 0.55;
+    }
+    /* extra things added from me  */
+    .skills-logo{
+        width: 10px;
+    }
+  }
+
+
+  
+  .skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px; 
+
+
+  }
+  .skill-container-left{
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+
+  }
+  .skill-container-right{
+    display: flex;
+    flex-wrap: wrap; 
+
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+  }
+  
+  .skill-faded-text{
+    user-select: none;
+    font-size: 15em;
+    color:rgb(231, 231, 231);
+     position: absolute;
+    bottom: -34.5%;
+    right: -25%;
+    font-weight: bold; 
+  }
+ .blob-style{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    animation: blobAnimate 3s linear infinite;
+ }
+ @keyframes blobAnimate {
+    50%{
+        top: 54%;
+        left: 46%;
+    }
+    
+ }
+ .skill-heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--bgOrange);
+    line-height: 50px;
+ }
+ .caps{
+    font-size: 90px;
+ }
+.skill-subheading{
+    margin-top:1rem ;
+    width: 85%;
+    text-align: justify;
+}
+
+.skill-subheading p{
+    margin:15px 0;
+  }
+
+.skills-logo{ 
+    width: 90px;
+    transition: all 0.5s;
+  }
+.skills-logo:hover{
+    transform: scale(1.2);
+}
+
+
+  
+ 
