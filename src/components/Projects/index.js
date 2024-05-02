@@ -20,7 +20,7 @@ const Projects = () => {
         <>
       <div className="container projects-page">
         <div className="text-zone P-zone">
-          <h1>
+          <h1 className='Words'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['P', 'r', 'o', 'j','e','c', 't', 's']}
